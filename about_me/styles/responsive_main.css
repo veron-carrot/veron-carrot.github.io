@@ -1,0 +1,78 @@
+@media all and ( max-width: 1100px ) {
+	main div {
+		width: 33.333%;
+	}
+}
+
+@media all and ( max-width: 800px ) {
+	main div {
+		width: 50%;
+	}
+}
+
+@media all and (min-width: 0) and (max-width: 480px) {
+	main div {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 600px) {
+
+	header {
+		height: auto;
+		width: 100%;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	header div  {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media all and (min-width: 0) and ( max-width: 780px ) {
+	.left_aside {
+		display: none;
+		position: absolute;
+		min-width: 270px !important;
+	}
+
+	.left_aside_display {
+		height: 100%;
+		display: block;
+	}
+
+
+	header div:nth-of-type(2) nav {
+		margin-left: 5em;
+	}
+
+	.menu_logo {
+		display: block;
+	}
+
+	.main_about {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	.left_aside nav {
+		position: absolute;
+		top: 1em;
+	}
+
+	.main_about p {
+		width: 100%;
+	}
+
+	.main_about {
+		width: 100%;
+		background: url(carrot.svg) repeat-x;
+		background-position: center;
+		background-size: 12%;
+	}
+}
