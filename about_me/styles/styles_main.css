@@ -1,4 +1,6 @@
 body , html {
+	width: 100%;
+	height: 100%;
 	background: #5c6866;
 }
 
@@ -30,13 +32,13 @@ header nav {
 	border-radius: 50%;
 	margin: 0 auto;
 	position: relative;
-	background: url(av2.png) no-repeat;
+	background: url(av.png) no-repeat;
 	background-size: 100%;
 	top: 2em;
 }
 
 h1 {
-	width: 11em;
+	width: 10em;
 	margin: 0 auto;
 	position: relative;
 	top: 3em;
@@ -87,6 +89,10 @@ h1 {
 	z-index: 1;
 }
 
+.right_aside {
+	height: 100%;
+}
+
 nav ul li:nth-of-type(2) a{
 	color: rgb( 180 , 180 , 180 );
 }
@@ -95,15 +101,15 @@ nav ul li:nth-of-type(3) a{
 	color: white;
 }
 
-.main_about p {
-	width: 80%;
-	height: 30em;
-	position: relative;
-	top: 6em;
-	margin: 0 auto;
+.left_aside nav #contacts_block {
 	background: #4e5f61;
 }
 
-.left_aside nav #contacts_block {
-		background: #4e5f61;
-	}
+p {
+	width: 80%;
+	margin: 1.5em auto;
+	color: lightgrey;
+	background: #204150;
+	padding: 3%;
+	position: relative;
+}

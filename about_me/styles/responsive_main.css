@@ -75,4 +75,12 @@
 		background-position: center;
 		background-size: 12%;
 	}
+
+	p {
+		width: 90%;
+		margin: 15em auto;
+		color: whitesmoke;
+		position: absolute;
+		left: 2%;
+	}
 }
