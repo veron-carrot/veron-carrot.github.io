@@ -72,25 +72,21 @@ nav ul li:nth-of-type(2) a{
 	height: 0;
 	width: 100%;
 	background: #5C6866;
-	-webkit-transition: all 1s;
-	        transition: all 1s;
+	transition: all 1s;
 	overflow: hidden;
 }
 
 .contacts_open {
-	-webkit-transition: all 1s;
-	        transition: all 1s;
+	transition: all 1s;
 	height: 7em !important;
-	-webkit-transition: 1s all;
-	        transition: 1s all;
+	transition: 1s all;
 }
 
 #contacts_block a {
 	width: 100%;
 	height: 0;
 	opacity: 0;
-	-webkit-transition: 1s all;
-	        transition: 1s all;
+	transition: 1s all;
 	display: inline-block;
 	color: white;
 }
@@ -184,9 +180,7 @@ header div {
 	top: 1.2em;
 	left: 0.5em;
 	background: #5C6866;
-	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 #menu_logo_close:after {
@@ -197,9 +191,7 @@ header div {
 	top: 0;
 	left: 0;
 	background: #5C6866;
-	-webkit-transform: rotate(90deg);
-	    -ms-transform: rotate(90deg);
-	        transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
 #menu_logo_close_container {
@@ -215,8 +207,7 @@ header div {
 }
 
 .left_aside {
-	-webkit-transition: all 0s !important;
-	        transition: all 0s !important;
+	transition: all 0s !important;
 }
 
 
@@ -237,8 +228,7 @@ main div {
 	margin-right: -5px;
 	text-align: center;
 	position: relative;
-	-webkit-transition: height 0.3s !important;
-	        transition: height 0.3s !important;
+	transition: height 0.3s !important;
 }
 
 div span {
@@ -250,8 +240,7 @@ div span {
 	font-size: 1em;
 	opacity: 0;
 	color: white;
-	-webkit-transition: all 0s;
-	        transition: all 0s;
+	transition: all 0s;
 }
 
 main div:hover {
@@ -298,30 +287,16 @@ img {
 /* Hide block */
 
 *{
-	-webkit-transition: all 1s;
-	        transition: all 1s;
+	transition: all 1s;
 }
 
 .hide_block {
-	-webkit-animation: display_none  0.5s forwards;
-	        animation: display_none  0.5s forwards;
+	animation: display_none  0.5s forwards;
 }
 
 .show_block {
 	width: 25%;
 	opacity: 1;
-}
-
-@-webkit-keyframes display_none{
-	0%{ 
-		opacity: 1;
-	 	width: 25%; 
-	  }
-
-	100%{
-		 opacity: 0;
-		 width: 0;
-	}
 }
 
 @keyframes display_none{
