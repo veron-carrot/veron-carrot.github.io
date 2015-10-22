@@ -62,7 +62,7 @@ function hideAllOther(x, y, z) {
 
 
 	for( i = 0; i < document.querySelectorAll(".right_aside nav a").length; i++) {
-		document.querySelectorAll(".right_aside nav a")[i].style.color = "#4e382d";
+		document.querySelectorAll(".right_aside nav a")[i].style.color = "#4e5352";
 	}
 
 	this.style.color = "white";

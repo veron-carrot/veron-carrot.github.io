@@ -59,12 +59,12 @@ nav ul li a{
 	width: 100%;
 	text-align: center;
 	display: inline-block !important;
-	color: rgb( 180 , 180 , 180 );
+	color: #d3685e;
 	margin: 0 auto;
 }
 
 nav ul li:nth-of-type(2) a{
-	color: white;
+	color: #f3ecd2;
 }
 
 #contacts_block {
@@ -120,7 +120,7 @@ nav ul li:nth-of-type(2) a{
 header {
 	width: 100%;
 	height: 3.5em;
-	background: #d3685e;
+	background: #ff6e61;
 	font-size: 17px;
 }
 
@@ -142,11 +142,11 @@ main div a {
 }
 
 header nav a , header nav a:visited {
-	color: #4e382d;
+	color: #4e5352;
 }
 
 a:hover {
-	color: white !important;
+	color: #f3ecd2 !important;
 }
 
 header div {
