@@ -1,26 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic);
+
 body , html {
 	min-width: 100%;
 	height: 100%;
 	background: grey;
+	overflow-x: hidden;
 }
 
 main {
 	min-width: 100%;
+	height: 90%;
 }
 
 img {
 	position: relative;
-	top: 5em;
+	top: 6%;
 	width: 100%;
-	min-width: 100%;
-	height: auto;
+	max-height: auto;
+	max-width: 75%;
 	z-index: 5;
+	display: block;
+	margin: 0 auto;
 }
 
 nav {
 	min-width: 100%;
 	text-align: center;
 	position: absolute;
+	top: 0.7%;
 }
 
 a {
@@ -29,7 +36,39 @@ a {
 	color: #f3ecd2;
 	text-decoration: none;
 	position: relative;
-	top: 1em;
 	font-size: 1.5em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Poiret One', cursive;
+}
+
+@media all and (orientation: landscape) and (max-height: 570px) {
+	main {
+		margin-top: 1em !important;
+	}
+}
+
+@media all and (orientation: portrait) {
+	a {
+		width: 100%;
+		height: 100px;
+		background: #ff6e61;
+		font-size: 5em;
+		z-index: 5;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	nav {
+		height: 100px;
+		min-width: 100%;
+		text-align: center;
+		position: relative;
+		display: table;
+		top: 0px;
+	}
+	img {
+		position: relative;
+		z-index: 5;
+		display: block;
+		top: 30%;
+		max-width: 100%;
+	}
 }

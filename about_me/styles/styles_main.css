@@ -1,7 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic);
+
+* {
+	font-family: 'Poiret One', cursive !important;
+}
+
 body , html {
 	width: 100%;
 	height: 100%;
-	background: #5c6866;
+	background: #272E57;
 }
 
 header, .logo {
@@ -10,49 +16,6 @@ header, .logo {
 
 header nav {
 	display: none;
-}
-
-.main_about {
-	width: 100%;
-	height: 200px;
-	background: url(carrot.svg) repeat-x;
-	background-position: center;
-	background-size: 9%;
-	position: relative;
-	top: -3em;
-	z-index: ;
-	margin: 0 auto;
-}
-
-.logo_morkov {
-	display: block;
-	width: 150px;
-	height: 150px;
-	border: 3px #a18754 solid;
-	border-radius: 50%;
-	margin: 0 auto;
-	position: relative;
-	background: url(av.png) no-repeat;
-	background-size: 100%;
-	top: 2em;
-}
-
-h1 {
-	width: 10em;
-	margin: 0 auto;
-	position: relative;
-	top: 3em;
-	color: lightgrey;
-	font-weight: 600;
-	font-size: 1.2em;
-	font-family: sans-serif;
-	font-weight: lighter;
-}
-
-.menu_logo {
-	background: black;
-	box-shadow: 0 0.7em 0 black , 0 1.4em 0 black;
-	z-index: 5 !important;
 }
 
 #menu_logo_symbol {
@@ -94,7 +57,7 @@ h1 {
 }
 
 nav ul li:nth-of-type(2) a{
-	color: rgb( 180 , 180 , 180 );
+	color: #d3685e;
 }
 
 nav ul li:nth-of-type(3) a{
@@ -106,10 +69,57 @@ nav ul li:nth-of-type(3) a{
 }
 
 p {
-	width: 80%;
+	width: 30%;
 	margin: 1.5em auto;
 	color: lightgrey;
-	background: #204150;
-	padding: 3%;
+	padding: 1%;
 	position: relative;
+	float: right;
+	font-size: 1.3em;
+	text-align: right;
+	margin-right: 0.5%;
+}
+
+p strong {
+	display: inline-block;
+	text-align: right;
+	color: #ff6e61;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+p span {
+	color: #ff6e61;
+}
+
+@media all and (min-width: 1000px) {
+	.right_aside {
+		background: url(bg.jpg) no-repeat;
+		background-size: auto 100%;
+	}
+	html {
+		overflow: hidden;
+	}
+}
+
+@media all and (device-aspect-ratio: 4/3 ) and (max-width: 1024px) {
+	.right_aside {
+		background-position: 50%;
+	}
+	p {
+		position: relative;
+		top: 30px;
+	}
+}
+
+@media all and (min-device-aspect-ratio: 16/9 ) {
+	.right_aside {
+		background-position: 50%;
+	}
+}
+
+@media all and (max-width: 1280px) {
+	.right_aside {
+		background-position: 50%;
+	}
 }

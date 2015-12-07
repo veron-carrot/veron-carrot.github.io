@@ -91,3 +91,11 @@
 	}
 
 }
+
+@media all and (min-width: 781px) and (max-width: 920px) {
+
+	.left_aside #contacts_block a:nth-of-type(1) {
+		font-size: 0.8em
+	}
+
+}

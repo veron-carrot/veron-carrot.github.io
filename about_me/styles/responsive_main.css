@@ -84,3 +84,36 @@
 		left: 2%;
 	}
 }
+
+@media all and (max-width: 1000px) {
+	.right_aside {
+		float: none;
+	}
+	p {
+		width: 70%;
+		margin: 0;
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 780px) {
+	.right_aside {
+		float: none;
+	}
+	p {
+		width: 90%;
+		margin: 0;
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 350px) {
+	.right_aside {
+		float: none;
+	}
+	p {
+		width: 90%;
+		margin-top: 2em;
+		text-align: center;
+	}
+}
