@@ -248,7 +248,10 @@ main div {
 	position: relative;
 	-webkit-transition: height 0.3s !important;
 	transition: height 0.3s !important;
-	will-change: auto;
+	-webkit-will-change: width, opacity;
+	will-change: width, opacity;
+	transform: translateZ(0);
+	transform-origin: 50% 50%;
 }
 
 div span {
@@ -273,21 +276,21 @@ img {
 }
 
 .logos {
-	background: black;
+	background-color: black;
 }
 
 .games{
-	background: #19686b;
+	background-color: #19686b;
 }
 
 .illustrations
 {
-	background: #99615b;
+	background-color: #99615b;
 }
 
 .other
 {
-	background: #59686b;
+	background-color: #59686b;
 }
 
 /* Main end */
@@ -306,30 +309,19 @@ img {
 
 .show_block {
 	width: 25%;
-	opacity: 1;
 }
 
 @-webkit-keyframes display_none{
-	0%{ 
-		opacity: 1;
-	 	width: 25%; 
-	  }
-
 	100%{
-		 opacity: 0;
 		 width: 0;
+		 opacity: 0;
 	}
 }
 
 @keyframes display_none{
-	0%{ 
-		opacity: 1;
-	 	width: 25%; 
-	  }
-
 	100%{
-		 opacity: 0;
 		 width: 0;
+		 opacity: 0;
 	}
 }
 
