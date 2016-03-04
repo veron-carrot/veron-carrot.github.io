@@ -73,6 +73,10 @@ nav ul li:nth-of-type(2) a{
 	color: #f3ecd2;
 }
 
+#contacts {
+	cursor: pointer;
+}
+
 #contacts_block {
 	margin: -0.5em auto;
 	height: 0;
