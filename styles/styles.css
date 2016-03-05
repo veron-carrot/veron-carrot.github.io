@@ -250,8 +250,6 @@ main div {
 	margin-right: -5px;
 	text-align: center;
 	position: relative;
-	-webkit-transition: height 0.3s !important;
-	transition: height 0.3s !important;
 	-webkit-will-change: width, opacity;
 	will-change: width, opacity;
 	transform: translateZ(0);
@@ -325,7 +323,6 @@ img {
 @keyframes display_none{
 	100%{
 		 width: 0;
-		 opacity: 0;
 	}
 }
 

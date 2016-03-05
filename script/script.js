@@ -155,12 +155,16 @@ contacts.onclick = openContacts;
 
 /* Contacts block end */
 
-setInterval(widthChange, 1000);
+widthChange();
+
+window.addEventListener("resize", widthChange);
 
 function widthChange() {
-	for(i = 0; i < my_img.length; i++ ){
+	setTimeout(function() {
+		for(i = 0; i < my_img.length; i++ ){
 		var img_width = getComputedStyle(block_for_width).width;
 		var real_width = img_width.substring(0, img_width.length - 2);
 		my_img[i].style.height =  real_width / 1.7 + "px";
 	}
+	}, 1000)
 }
